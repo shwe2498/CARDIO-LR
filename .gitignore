@@ -1,0 +1,53 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+ENV/
+cardio_venv/
+
+# Version directories (looks like package version directories)
+=*.*.*
+
+# Data files
+# Exclude raw data but include a placeholder
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/README.md
+
+# Large processed data/models
+data/processed/models/
+
+# Keep structure but exclude large files
+data/processed/kg/*
+!data/processed/kg/.gitkeep
+data/processed/embeddings/*
+!data/processed/embeddings/.gitkeep
+
+# Benchmark results (can be regenerated)
+benchmark_results/*.csv
+
+# Generated reports
+computational_report.json
+
+# OS specific files
+.DS_Store
+desktop.ini
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo

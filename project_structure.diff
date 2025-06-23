@@ -1,0 +1,36 @@
+cardiology_lightrag/
+├── data/
+│   ├── raw/
+│   │   ├── umls/
+│   │   ├── snomed_ct/        # NEW
+│   │   │   └── SnomedCT_Release_files/
+│   │   ├── medquad/          # NEW
+│   │   │   └── MedQuAD.csv
+│   │   ├── drugbank.csv
+│   │   └── BioASQ/
+├── kg_construction/
+│   ├── umls_processor.py
+│   ├── drugbank_processor.py
+│   ├── snomed_processor.py   # NEW
+│   └── knowledge_integrator.py # NEW
+├── retrieval/
+│   ├── hybrid_retriever.py
+│   ├── faiss_indexer.py
+│   └── embedding_generator.py # NEW
+├── gnn/
+│   ├── rgcn_model.py
+│   └── subgraph_extractor.py
+├── generation/
+│   ├── biomed_generator.py
+│   ├── answer_validator.py
+│   └── explainability.py     # NEW
+├── personalization/          # NEW
+│   ├── patient_context.py
+│   └── context_integrator.py
+├── evaluation/
+│   ├── evaluate.py
+│   └── metrics.py
+├── pipeline.py
+├── config.py
+├── requirements.txt
+└── demo.ipynb
